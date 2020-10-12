@@ -44,6 +44,8 @@
 ## Usage
 
     python3 cc.py
-    
-## Donate
-Btc: 3HYjBg43cFqpqCzurcfprMAn4A2xyrDB7E
+    后台运行：安装screen
+    创建一个新后台：screen -S cc
+    运行脚本：python3 cc.py
+    切入后台：Ctrl + a +d 
+    恢复前台：screen -r cc
