@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 #Coded by L330n123
-#########################################
+##########################################
 #     Multiprocessing is so good        #
 #      But it is too powerful so        #
 #     I decided not release it out      #
 #                           -- L330n123 #
-#########################################
+##########################################
 import requests
 import socket
 import socks
